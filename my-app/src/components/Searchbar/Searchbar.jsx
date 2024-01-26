@@ -1,5 +1,4 @@
 import React from "react";
-import  ReactDOM  from "react-dom";
 import searchboximg from "../../assets/Search icon.svg"
 import styles from "./searchbar.module.css"
 
