@@ -1,0 +1,18 @@
+.hero{
+    background-color: #121212;
+    height: 270px;
+    display: block;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+}
+
