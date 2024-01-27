@@ -7,7 +7,7 @@ export default function Hero(){
         <div className={styles.hero}>
             <div className={styles.main}>
                 <div className={styles.text}>
-                    <p>100 Thousand songs, add-free</p>
+                    <p>100 Thousand Songs, ad-free</p>
                     <p>Over thousand podcast episodes</p>
                 </div>
                 <img src={headphones} alt="headphoneimage" width={212} height={212} />
