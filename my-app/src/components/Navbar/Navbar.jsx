@@ -8,7 +8,7 @@ export default function Nav(){
     return(
         <div className={styles.navbar}>
         <Logo />
-        <Searchbar search={"Search a ablum of your choice"} />
+        <Searchbar search={"Search a song of your choice"} />
         <Feedback />
         </div>
     )
