@@ -4,12 +4,14 @@ import React from 'react';
 import  ReactDOM  from 'react-dom';
 import Nav from './components/Navbar/Navbar';
 import Hero from './components/Herosection/Herosection';
+import Topablum from './components/CradCarousel/Topalbum';
 
 function App() {
   return (
     <>
     <Nav />
     <Hero />
+    <Topablum />
     </>
   );
 }

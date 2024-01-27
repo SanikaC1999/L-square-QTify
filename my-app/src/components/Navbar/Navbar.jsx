@@ -1,5 +1,4 @@
 import React from "react";
-import  ReactDOM  from "react-dom";
 import Logo from '../Logo/Logo'
 import styles from "./Navbar.module.css"
 import Searchbar from "../Searchbar/Searchbar";

@@ -1,0 +1,36 @@
+.card{
+    background-color: #FFFFFF;
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+}
+.image{
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-width: 100%;
+    width: 100%;
+}
+.pill {
+    display: inline-block;
+    /* padding: 0px, 8px; */
+    margin-left: 6px;
+    padding-top: 6px;
+    /* gap: 1px; */
+    border-radius: 10px;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: lighter;
+    width: 71px;
+    height: 23px;
+    text-align: center;
+}
+.wrapper{
+    width:160px;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: lighter;
+}
