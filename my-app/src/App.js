@@ -1,35 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-import  ReactDOM  from 'react-dom';
+import React, { useEffect, useState } from 'react';
 import Nav from './components/Navbar/Navbar';
-import Hero from './components/Herosection/Herosection';
-import Topablum from './components/CradCarousel/Topalbum';
+import { Outlet } from 'react-router-dom';
+import { fetchNewAlbums , fetchSongs ,fetchTopAlbums } from './api/api';
 
 function App() {
+  const [searchData, setSearchData] = useState();
+  const [data,setData] = useState({});
+
+  const generateData = (key, source) => {
+    source()
+      .then((data) => {
+        setData((prevData) => {
+          return { ...prevData, [key]: data };
+        });
+      })
+      .catch((error) => {
+        console.error(`Error fetching ${key}:`, error);
+      });
+  };
+  
+  useEffect(() => {
+    generateData("topAlbums", fetchTopAlbums);
+    generateData("newAlbums", fetchNewAlbums);
+    generateData("songs", fetchSongs);
+  }, []);
+  
+  const {topAlbums=[] , newAlbums=[] ,songs=[]} = data
+
   return (
     <>
-    <Nav />
-    <Hero />
-    <Topablum />
+    <div>
+      <Nav />
+      <Outlet context={{data:{topAlbums ,newAlbums ,songs}}}/>
+    </div>
     </>
   );
 }
 
 export default App;
-// {/* <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div> */}

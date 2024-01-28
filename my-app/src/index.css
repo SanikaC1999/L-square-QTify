@@ -37,7 +37,7 @@ body{
   font-family: "Poppins" , sans-serif ;
   line-height: 1.5;
   -webkit-font-smoothing : antialiased ;
-  background-color: var(--color-black);
+  background-color:  #121212;
   color: var(--color-white);
   overflow: hidden;
 
@@ -72,4 +72,12 @@ h6{
 #root,
 #_next{
   isolation: isolate;
+}
+
+a,
+a:hover,
+a:focus,
+a:active{
+  text-decoration: none;
+  color: inherit;
 }
