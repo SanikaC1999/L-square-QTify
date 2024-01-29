@@ -1,7 +1,7 @@
 .card{
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     width: 159px;
-    height: 205px;
+    height: 170px;
     border-radius: 10px;
 }
 .image{
@@ -19,11 +19,27 @@
     font-size: 14px;
     font-weight: lighter;
     color: #FFFFFF;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.cardchip{
+.banner{
+    background-color: #FFFFFF;
+    height: 35px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    .cardchip{
+        background-color:#121212;
+        color: #FFFFFF;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+}
+
+/* .cardchip{
     background-color:#121212;
     color: #FFFFFF;
     margin-left: 6px;
     margin-top: 6px;
-}
+} */

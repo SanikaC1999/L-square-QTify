@@ -26,7 +26,6 @@ export default function Section({title , data , type}){
                                     <Card key={ele.id} data={ele} type={type}  />
                                     
                                 ))}
-                                hi
                         </div>
                     ) : (
                         <div>

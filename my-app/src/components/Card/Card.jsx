@@ -16,8 +16,10 @@ export default function Card({data ,type}){
                             <div className={styles.wrapper}>
                             <div className={styles.card}>
                                 <img src={image} alt="cardimage"  height={170} className={styles.image} loading="lazy"/>
-                                <Chip className={styles.cardchip} label={ `${follows} Follows`} size="small" />
                             </div>
+                                <div className={styles.banner}>
+                                    <Chip className={styles.cardchip} label={ `${follows} Follows`} size="small" />
+                                </div> 
                             <p className={styles.text}>{title}</p>
                             </div>
                         </Link>
