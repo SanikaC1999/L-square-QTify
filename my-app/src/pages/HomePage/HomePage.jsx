@@ -3,6 +3,7 @@ import Hero from "../../components/Herosection/Herosection";
 import { useOutletContext } from "react-router-dom";
 import Section from "../../components/Section/Section";
 import styles from "./HomePage.module.css"
+import { fetchFilters } from '../../api/api'
 
 
 export default function HomePage(){
@@ -16,6 +17,7 @@ export default function HomePage(){
                 <p>{topAlbums.title}</p>
                 <Section title="Top Alumbs" data={topAlbums} type="album" />
                 <Section title="New Alumbs" data={newAlbums} type="album" />
+                <Section title="Songs" data={songs} type="songs"  filterSource ={fetchFilters} />
             </div>
         </>
     )

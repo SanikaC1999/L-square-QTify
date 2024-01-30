@@ -14,13 +14,13 @@ export default function Card({data ,type}){
                     <Tooltip title={`${songs.length} songs`} placement="top" arrow>
                         <Link to={`album/${slug}`}>
                             <div className={styles.wrapper}>
-                            <div className={styles.card}>
-                                <img src={image} alt="cardimage"  height={170} className={styles.image} loading="lazy"/>
-                            </div>
-                                <div className={styles.banner}>
-                                    <Chip className={styles.cardchip} label={ `${follows} Follows`} size="small" />
-                                </div> 
-                            <p className={styles.text}>{title}</p>
+                                <div className={styles.card}>
+                                    <img src={image} alt="cardimage"  height={170} className={styles.image} loading="lazy"/>
+                                </div>
+                                    <div className={styles.banner}>
+                                        <Chip className={styles.cardchip} label={ `${follows} Follows`} size="small" />
+                                    </div> 
+                                <p className={styles.text}>{title}</p>
                             </div>
                         </Link>
                     </Tooltip>
@@ -29,11 +29,13 @@ export default function Card({data ,type}){
                 const {image , likes , title} = data
                 return (
                     <div className={styles.wrapper}>
-                    <div className={styles.card}>
-                        <img src={image} alt="cardimage"  height={170} className={styles.image} loading="lazy"/>
-                        <Chip className={styles.cardchip} label={ `${likes} Follows`} size="small" />
-                    </div>
-                    <p className={styles.text}>{title}</p>
+                        <div className={styles.card}>
+                            <img src={image} alt="cardimage"  height={170} className={styles.image} loading="lazy"/>
+                         </div>
+                        <div className={styles.banner}>
+                            <Chip className={styles.cardchip} label={ `${likes} Follows`} size="small" />
+                        </div>
+                        <p className={styles.text}>{title}</p>
                     </div>
                 )
             }
